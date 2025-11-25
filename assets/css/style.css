@@ -1,24 +1,172 @@
+/* ---------------- GLOBAL ---------------- */
 body {
-    font-family: Arial;
-    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background: linear-gradient(120deg, #f3f5ff, #dee9ff);
+    transition: 0.3s;
+    padding-bottom: 50px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #4b4bff, #6f6fff);
+    padding: 15px 20px;
+    color: white;
+    box-shadow: 0 0 10px #999;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#modeToggle {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+    background: white;
+    color: #4b4bff;
+}
+
+#modeToggle:hover {
+    transform: scale(1.05);
+}
+
+/* ---------------- CATEGORIES ---------------- */
+.categories {
+    text-align: center;
+    margin: 20px 0;
 }
 
 .categories button {
-    padding: 10px;
-    margin: 5px;
+    padding: 10px 20px;
+    margin: 6px;
+    border-radius: 8px;
+    border: 2px solid #4b4bff;
+    background: white;
+    color: #4b4bff;
+    font-size: 16px;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
-#product-list button {
-    margin: 5px;
+.categories button:hover {
+    background: #4b4bff;
+    color: white;
+    transform: translateY(-3px);
 }
 
+/* ---------------- PRODUCT CARDS ---------------- */
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 200px;
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 3px 10px #bbb;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.add-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #4b4bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: #2d2db8;
+    transform: scale(1.05);
+}
+
+/* ---------------- CART TABLE ---------------- */
 table {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 20px;
+    background: white;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-#receipt-box {
-    background: #eee;
-    padding: 10px;
-    margin-top: 10px;
+th {
+    background: #4b4bff;
+    color: white;
+    padding: 12px;
 }
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+td button {
+    background: #ff4b4b;
+    border: none;
+    padding: 6px 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+td button:hover {
+    background: #cc0000;
+}
+
+/* ---------------- DARK MODE ---------------- */
+.dark-mode {
+    background: linear-gradient(120deg, #1e1e2e, #13131f);
+    color: white;
+}
+
+.dark-mode table {
+    background: #252544;
+}
+
+.dark-mode .card {
+    background: #2d2d4f;
+    color: white;
+}
+
+.dark-mode #product-list-crud li {
+    background: #2d2d4f;
+    color: white;
+}
+
+.dark-mode .navbar {
+    background: linear-gradient(90deg, #151533, #1e1e46);
+}
+
