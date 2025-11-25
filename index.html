@@ -7,6 +7,60 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
+     <h1>FashionRack Point of Sale</h1>
+
+    <!-- Category Buttons -->
+    <div class="categories">
+        <button onclick="showCategory('shirts')">Shirts</button>
+        <button onclick="showCategory('pants')">Pants</button>
+        <button onclick="showCategory('accessories')">Accessories</button>
+    </div>
+
+    <!-- Products Section -->
+    <div id="product-list"></div>
+
+    <!-- Cart Section -->
+    <h2>Cart</h2>
+    <table id="cart-table" border="1">
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Remove</th>
+        </tr>
+    </table>
+
+    <!-- Discount -->
+    <label>Enter Discount (%): </label>
+    <input type="number" id="discount-input" />
+    <button onclick="applyDiscount()">Apply</button>
+
+    <!-- Total -->
+    <h3 id="total-display">Total: Rs. 0</h3>
+
+    <!-- Receipt -->
+    <button onclick="generateReceipt()">Generate Receipt</button>
+    <pre id="receipt-box"></pre>
+
+
+
+
+    <h2>Manage Products (CRUD)</h2>
+
+<label>Product Name:</label>
+<input id="pname"><br>
+
+<label>Price:</label>
+<input id="pprice" type="number"><br>
+
+<button onclick="addNewProduct()">Add Product</button>
+
+<ul id="product-list-crud"></ul>
+
+
+
+
+
     <script src="assets/js/app.js"></script>
 </body>
 </html>
