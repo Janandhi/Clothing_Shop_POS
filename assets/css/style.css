@@ -8,16 +8,24 @@ body {
 
 h1 {
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: serif;
     font-size: 48px;
-    margin-top: 20px;
+    margin: 20px auto;
+    max-width: 1600px;         
+    padding: 20px 30px;       
 
-    background: linear-gradient(45deg, #760622, #ffb199);
+    background-color: #fff0f0; 
+    border-radius: 15px;      
+    box-shadow: 0 8px 20px rgba(300, 6, 34, 0.3); 
+
+    background: linear-gradient(45deg, #a91012, #371a71);
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
     color: transparent;
 
-    text-shadow: 0px 4px 10px rgba(255, 80, 80, 0.3);
+    text-shadow: 0px 4px 10px rgba(47, 22, 159, 0.3);
 }
+
 
 
 .navbar {
@@ -68,7 +76,7 @@ h1 {
     padding: 10px 20px;
     margin: 6px;
     border-radius: 8px;
-    border: 2px solid #1a1a8a;
+    border: 2px solid #4141f6;
     background: white;
     color: #4b4bff;
     font-size: 16px;
@@ -179,4 +187,51 @@ td button:hover {
 
 .dark-mode .navbar {
     background: linear-gradient(90deg, #151533, #1e1e46);
+}
+
+.footer {
+  background-color: #310676;
+  color: #fff;
+  padding: 30px 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  min-width: 220px;
+}
+
+.footer-section h3 {
+  margin-bottom: 12px;
+  border-bottom: 2px solid #1e168d;
+  padding-bottom: 5px;
+}
+
+.footer-section p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.footer-section iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(255, 75, 75, 0.3);
+  max-width: 100%;
+  height: 150px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 13px;
+  opacity: 0.7;
 }

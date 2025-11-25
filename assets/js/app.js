@@ -87,6 +87,7 @@ function generateReceipt() {
 
     text += "\n---------------------------\n";
     text += "Total: Rs." + total;
+    
 
     document.getElementById("receipt-box").innerText = text;
 }
