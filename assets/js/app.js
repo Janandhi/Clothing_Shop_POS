@@ -1,6 +1,5 @@
 console.log("JS is loaded");
 
-// Dark Mode Toggle
 function toggleMode() {
     document.body.classList.toggle("dark-mode");
     let btn = document.getElementById("modeToggle");
@@ -10,7 +9,6 @@ function toggleMode() {
         : "🌙 Dark Mode";
 }
 
-// Product Database
 const products = {
     shirts: [
         { name: "Casual Shirt", price: 2500, img: "shirt1.jpg" },
@@ -32,7 +30,6 @@ const products = {
 let cart = [];
 let total = 0;
 
-// Show category items
 function showCategory(category) {
     let list = document.getElementById("product-list");
     list.innerHTML = "";
@@ -49,7 +46,6 @@ function showCategory(category) {
     });
 }
 
-// Add to Cart
 function addToCart(name, price) {
     cart.push({ name, price });
 
@@ -74,7 +70,6 @@ function updateTotal() {
     document.getElementById("total-display").innerHTML = "Total: Rs. " + total;
 }
 
-// Discount
 function applyDiscount() {
     let discount = Number(document.getElementById("discount-input").value);
     let finalTotal = total - (total * discount) / 100;
@@ -83,7 +78,6 @@ function applyDiscount() {
         "Total After Discount: Rs. " + finalTotal;
 }
 
-// Receipt
 function generateReceipt() {
     let text = "----- FashionRack Receipt -----\n\n";
 
@@ -97,7 +91,6 @@ function generateReceipt() {
     document.getElementById("receipt-box").innerText = text;
 }
 
-// CRUD Product List
 let customProducts = [];
 
 function addNewProduct() {

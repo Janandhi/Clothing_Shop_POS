@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clothing Shop</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-     <h1>FashionRack Point of Sale</h1>
+    <h1>FASHIONRACK POINT OF SALE</h1>
+    <div class="center-logo">
+        <img src="assets/img/LOGO.jpg" width="30%">
+    </div>
 
-     <!-- Navigation Bar -->
-<nav class="navbar">
-    <div class="logo">FashionRack POS</div>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">FashionRack </div>
 
-    <button id="modeToggle" onclick="toggleMode()">🌙 Dark Mode</button>
-</nav>
+        <button id="modeToggle" onclick="toggleMode()">🌙 Dark Mode</button>
+    </nav>
 
 
     <!-- Category Buttons -->
@@ -55,15 +60,15 @@
 
     <h2>Manage Products (CRUD)</h2>
 
-<label>Product Name:</label>
-<input id="pname"><br>
+    <label>Product Name:</label>
+    <input id="pname"><br>
 
-<label>Price:</label>
-<input id="pprice" type="number"><br>
+    <label>Price:</label>
+    <input id="pprice" type="number"><br>
 
-<button onclick="addNewProduct()">Add Product</button>
+    <button onclick="addNewProduct()">Add Product</button>
 
-<ul id="product-list-crud"></ul>
+    <ul id="product-list-crud"></ul>
 
 
 
@@ -71,4 +76,5 @@
 
     <script src="assets/js/app.js"></script>
 </body>
+
 </html>
