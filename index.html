@@ -1,12 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clothing Shop</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
+
+    <h1>FASHIONRACK POINT OF SALE</h1>
+    <div class="center-logo">
+        <img src="assets/img/LOGO.jpg" width="30%">
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">FashionRack </div>
+
+        <button id="modeToggle" onclick="toggleMode()">🌙 Dark Mode</button>
+    </nav>
+
+
+    <!-- Category Buttons -->
+    <div class="categories">
+        <button onclick="showCategory('shirts')">Shirts</button>
+        <button onclick="showCategory('pants')">Pants</button>
+        <button onclick="showCategory('accessories')">Accessories</button>
+    </div>
+
+    <!-- Products Section -->
+    <div id="product-list"></div>
+
+    <!-- Cart Section -->
+    <h2>Cart</h2>
+    <table id="cart-table" border="1">
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Remove</th>
+        </tr>
+    </table>
+
+    <!-- Discount -->
+    <label>Enter Discount (%): </label>
+    <input type="number" id="discount-input" />
+    <button onclick="applyDiscount()">Apply</button>
+
+    <!-- Total -->
+    <h3 id="total-display">Total: Rs. 0</h3>
+
+    <!-- Receipt -->
+    <button onclick="generateReceipt()">Generate Receipt</button>
+    <pre id="receipt-box"></pre>
+
+
+
+
+    <h2>Manage Products (CRUD)</h2>
+
+    <label>Product Name:</label>
+    <input id="pname"><br>
+
+    <label>Price:</label>
+    <input id="pprice" type="number"><br>
+
+    <button onclick="addNewProduct()">Add Product</button>
+
+    <ul id="product-list-crud"></ul>
+
+
+
+
+    <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>Email: support@fashionrack.com</p>
+      <p>Phone: +94 123 456 789</p>
+    </div>
+    <div class="footer-section">
+      <h3>Address</h3>
+      <p>123 Fashion Street</p>
+      <p>Colombo, Sri Lanka</p>
+    </div>
+    <div class="footer-section">
+      <h3>Location</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.356291334712!2d79.86124361477558!3d6.927079394986965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2594f6f27e2ab%3A0x8b1a6aef82a8b7a!2sColombo%2C%20Sri%20Lanka!5e0!3m2!1sen!2sus!4v1698387596549!5m2!1sen!2sus"
+        width="250"
+        height="150"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 FashionRack. All rights reserved.
+  </div>
+</footer>
+
+
+
+
+
     <script src="assets/js/app.js"></script>
 </body>
+
 </html>
