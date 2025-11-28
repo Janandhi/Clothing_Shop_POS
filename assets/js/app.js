@@ -70,9 +70,12 @@ function updateTotal() {
     document.getElementById("total-display").innerHTML = "Total: Rs. " + total;
 }
 
+let finalTotal = total; 
+let appliedDiscount = 0;
+
 function applyDiscount() {
-    let discount = Number(document.getElementById("discount-input").value);
-    let finalTotal = total - (total * discount) / 100;
+    appliedDiscount = Number(document.getElementById("discount-input").value);
+    finalTotal = total - (total * appliedDiscount) / 100;
 
     document.getElementById("total-display").innerHTML =
         "Total After Discount: Rs. " + finalTotal;
@@ -86,8 +89,9 @@ function generateReceipt() {
     });
 
     text += "\n---------------------------\n";
-    text += "Total: Rs." + total;
-    
+    text += "Total Before Discount: Rs." + total + "\n";
+    text += "Discount Applied: " + appliedDiscount + "%\n";
+    text += "Final Total: Rs." + finalTotal;
 
     document.getElementById("receipt-box").innerText = text;
 }

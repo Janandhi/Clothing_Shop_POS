@@ -189,6 +189,23 @@ td button:hover {
     background: linear-gradient(90deg, #151533, #1e1e46);
 }
 
+
+#receipt-box {
+    width: 350px;
+    padding: 20px;
+    margin-top: 20px;
+    background: #1d6ba2c9;
+    border: 2px solid #760622;
+    border-radius: 12px;
+
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+    white-space: pre-wrap;
+}  
+
+
 .footer {
   background-color: #310676;
   color: #fff;
